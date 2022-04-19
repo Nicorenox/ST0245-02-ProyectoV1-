@@ -6,5 +6,5 @@ map_acoso = pd.read_csv('https://raw.githubusercontent.com/mauriciotoro/ST0245-E
 
 grafica = nx.from_pandas_edgelist(map_acoso, source='origin', target='destination', edge_attr='harassmentRisk')
 
-dijkstra_caminomenosacoso = nx.dijkstra_path(grafica, source='(-75.6019061, 6.2843217)', target='(-75.5929496, 6.2813088)', weight='harassmentRisk')
+dijkstra_caminomenosacoso = nx.dijkstra_path(grafica, source='(-75.6118262, 6.227342)', target= '(-75.6909483, 6.338773)', weight='harassmentRisk')
 print (dijkstra_caminomenosacoso)
